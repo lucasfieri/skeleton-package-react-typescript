@@ -1,10 +1,10 @@
 {
   "name": "@lucasfieri/skeleton-package-react-typescript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
-  "jsnext:main": "build/index.es.js",
+  "main": "build",
+  "module": "build",
+  "jsnext:main": "build",
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
@@ -43,5 +43,8 @@
   "peerDependencies": {
     "react": "^16.8.0  || ^17.0.0",
     "react-dom": "^16.8.0  || ^17.0.0"
+  },
+  "dependencies": {
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
