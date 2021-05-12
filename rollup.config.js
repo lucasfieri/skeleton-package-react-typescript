@@ -8,17 +8,16 @@ import pkg from "./package.json";
 
 export default {
   input: "src/index.tsx",
-  preserveModules: true,
   output: [
     {
-      dir: pkg.main,
+      file: pkg.main,
       format: "cjs",
       exports: "named",
       sourcemap: true,
       plugins: [terser()]
     },
     {
-      dir: pkg.module,
+      file: pkg.module,
       format: "es",
       exports: "named",
       sourcemap: true
